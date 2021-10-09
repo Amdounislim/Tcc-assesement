@@ -60,8 +60,8 @@ export default {
       title: this.isEdit ? "Edit User" : "Add New User",
       dialog: false,
       id: this.isEdit ? this.user.id : Math.random(),
-      firstName: this.isEdit ? this.user.lastName : "",
-      lastName: this.isEdit ? this.user.firstName : "",
+      firstName: this.isEdit ? this.user.firstName : "",
+      lastName: this.isEdit ? this.user.lastName : "",
       email: this.isEdit ? this.user.email : "",
     };
   },
