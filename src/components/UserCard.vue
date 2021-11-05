@@ -17,7 +17,7 @@
     </v-list-item>
 
     <v-card-actions>
-      <v-btn outlined rounded @click="$emit('delete-user', user.id)" color="error"> Delete User </v-btn>
+      <v-btn outlined rounded @click="deleteUser" color="error"> Delete User </v-btn>
 
       <AddUser
         v-bind:user="user"
@@ -35,6 +35,10 @@ export default {
   name: "UserCard",
   props: ["user"],
   methods: {
+    deleteUser() {
+      this.$emit('delete-user', this.user.id);
+    },
+
     // Send up to parent
     editUser({ id, newUser }) {
       this.$emit("edit-user", { id, newUser });

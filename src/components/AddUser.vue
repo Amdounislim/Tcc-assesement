@@ -44,7 +44,7 @@
           <v-btn color="blue darken-1" text @click="dialog = false">
             Close
           </v-btn>
-          <v-btn color="blue darken-1" text @click="action"> Save </v-btn>
+          <v-btn color="blue darken-1" class="save" text @click="action"> Save </v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
